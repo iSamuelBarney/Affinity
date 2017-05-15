@@ -16,9 +16,15 @@
 <link rel="stylesheet" type="text/css" href="{{asset "affinity.min.css"}}" />
 <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
 
     {{!-- Ghost outputs important style and meta data with this tag --}}
 {{ghost_head}}
+<style>
+.sidebar-header .nav a {
+  font-family: 'Paytone One', sans-serif;
+}
+</style>
 </head>
 <body class="{{body_class}}">
     <section class="section">
@@ -27,7 +33,7 @@
           <a href="{{@blog.url}}" class="sidebar-header-logo" style="font-family: 'Reenie Beanie', cursive;font-size:2.4em;color:black;">
             <span><strong>randomcode</strong>.work</span>
           </a>
-          <p style="font-family: 'Playfair Display', serif;">{{@blog.description}}</p>
+          <p style="font-family: 'Playfair Display', serif;text-transform:uppercase;letter-spacing:2px;font-size:0.67rem;">{{@blog.description}}</p>
           {{!-- The blog navigation links --}}
           {{navigation}}
         </div>
