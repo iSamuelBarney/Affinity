@@ -22,6 +22,15 @@
     {{!-- Ghost outputs important style and meta data with this tag --}}
 {{ghost_head}}
 <style>
+.content-post .content-post-title h1, .content-post .content-post-body h3, .content-post .content-post-body h2, .content-post .content-post-body h4, .content-post .content-post-body h5 {
+  font-family: 'Paytone One', sans-serif;
+}
+.content-post .content-post-body p {
+  font-family: 'Montserrat', sans-serif;
+}
+.content-post .toc {
+  font-family: 'Montserrat', sans-serif;
+}
 .sidebar-header .nav a {
   font-family: 'Paytone One', sans-serif;
 }
@@ -74,7 +83,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
           </a>
           <p style="font-family: 'Montserrat', sans-serif;text-transform:uppercase;letter-spacing:3px;font-size:0.67rem;">{{@blog.description}}</p>
           {{!-- The blog navigation links --}}
-          {{navigation}}
+          {{!-- navigation --}}
         </div>
         <div class="sidebar-footer"></div>
       </section>
