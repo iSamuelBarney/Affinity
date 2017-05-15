@@ -22,6 +22,18 @@
     {{!-- Ghost outputs important style and meta data with this tag --}}
 {{ghost_head}}
 <style>
+@media screen and (max-width: 1200px) {
+  .content-cards .content-card {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.content-cards .content-card {
+  -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 .content-post .content-post-title h1, .content-post .content-post-body h3, .content-post .content-post-body h2, .content-post .content-post-body h4, .content-post .content-post-body h5 {
   font-family: 'Paytone One', sans-serif;
 }
@@ -78,6 +90,7 @@
 .content-cards .card {
   display: block;
   position: relative;
+  background-color: black;
 }
 .card .card-header {
   position: absolute;
